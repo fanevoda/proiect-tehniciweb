@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InooTiles</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>InnoTiles</h1>
+    <nav>
+      <ul>
+        <li><a href="/index">Acasă</a></li>
+
+        <li><a href="#">
+          <div class="dropdown">
+            <button class="dropbtn">Produse <i class="arrow"> </i> </button>
+            <div class="dropdown-content" id = "dropdown produse">
+              
+            </div>
+          </div>
+        </a></li>
+
+        <li><a href="/about">Despre noi</a></li>
+
+        <li><a href="#">
+          <div class="dropdown">
+            <button class="dropbtn">Contact <i class="arrow"> </i> </button>
+            <div class="dropdown-content">
+              <a href="https://wa.me/0740188280">Whatsapp</a>
+              <a href="https://www.facebook.com/profile.php?id=100044975814310">Facebook</a>
+              <a href="https://www.instagram.com/italbogceramic/">Instagram</a>
+            </div>
+          </div>
+        </a></li>
+        <li><button id="dark-mode-toggle" class = "darkmode">Dark Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+
+
+  <section class="order-section">
+    <div class="order-form">
+      <h2>Comandă</h2>
+      <form action="/comanda" method="post">
+        <label for="name">Nume:</label>
+        <input type="text" id="name" name="name" required>
+      
+        <label for="email" style="padding-top: 10px;">Email:</label>
+        <input type="text" id="email" name="email" required>
+      
+        <label for="model" style="padding-top: 10px;">Model:</label>
+        <select id="Produs" name="model">
+          <option value="River Black">River Black</option>
+          <option value="New Gray">New Gray</option>
+          <option value="Blue Stone">Blue Stone</option>
+          <option value="Caesar Ceramiche">Caesar Ceramiche</option>
+          <option value="Astrid">Astrid</option>
+          <option value="Miami Natural">Miami Natural</option>
+        </select>
+      
+        <label for="metri" style="padding-top: 10px;">Metri pătrați:</label>
+        <input type="text" id="metri" name="metri" required>
+      
+        <label for="address" style="padding-top: 10px;">Adresă de livrare:</label>
+        <textarea id="address" name="address" required></textarea>
+      
+        <button type="submit" style="padding-top: 10px;">Plasează comanda</button>
+      </form>
+      
+    </div>
+  </section>
+
+
+
+  <div id="message" style = "text-align: center; padding-top: 5px;"></div>
+
+  <footer>
+    <p>&copy; 2023 Magazinul nostru de gresie și faianță. Toate drepturile rezervate.</p>
+    <p>(dog)</p>
+    <div class="dog-container">
+        <img src="img/huskydragut.png" alt="husky frumos" class="dog-photo">
+      </div>
+    <p>[dog]</p>
+    <p>{dog}</p>
+    <p>săgeată sus</p>
+  </footer>
+
+  <script src="js/dark mode.js"></script>
+  <script src="js/produse.js"></script>
+  <script src="js/huskyjucaus.js"></script>
+  <script src="js/huskynejucaus.js"></script>
+  <script src="js/mesajvizitator.js"></script>
+  <script src="js/numecumparator.js"></script>
+ 
+</body>
+</html>
